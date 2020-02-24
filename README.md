@@ -15,6 +15,6 @@ Input (Low/High) => Output <br>
 
 nil => argument error "input soundwave is corrupt"
 
-Max array = 44,000
-Min array = 0
-no "-" value integers provided
+Max array = 44,000 <br>
+Min array = 0 <br>
+no "-" value integers provided <br>
