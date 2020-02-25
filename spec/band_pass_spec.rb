@@ -10,5 +10,9 @@ describe BandPass do
         band_pass = BandPass.new
         expect(band_pass.filter([4],2,3)). to eq([3])
       end
+      it 'filters signal keeps 2 when low 1 and high 3' do
+        band_pass = BandPass.new
+        expect(band_pass.filter([2],1,3)). to eq([2])
+      end
     end
 end

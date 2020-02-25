@@ -4,6 +4,8 @@ class BandPass
             frequency = [low_range]
         elsif frequency[0] > high_range
             frequency = [high_range]
+        else
+            frequency
         end
     end
 end
