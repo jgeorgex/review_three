@@ -1,10 +1,9 @@
 class BandPass
-    def filter(band,low,high)
-        if band[0] < low
-            band = [low]
-        elsif band[0] > high
-            band = [high]
+    def filter(frequency,low_range,high_range)
+        if frequency[0] < low_range
+            frequency = [low_range]
+        elsif frequency[0] > high_range
+            frequency = [high_range]
         end
-        band
     end
 end
