@@ -46,5 +46,9 @@ describe BandPass do
         band_pass = BandPass.new
         expect(band_pass.filter(["A"],"A","A")). to eq("input soundwave is corrupt")
       end
+      it 'returns argument error "input soundwave is corrupt" if single nil value is given' do
+        band_pass = BandPass.new
+        expect(band_pass.filter(["A"],1,1)). to eq("input soundwave is corrupt")
+      end
     end
 end
