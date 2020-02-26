@@ -1,11 +1,7 @@
 class BandPass
     def filter(frequency, low_range, high_range)
-        if check_low_range(low_range) == false
+        if check_low_range(low_range) == false || check_high_range(high_range) == false || check_frequency(frequency) == false
             "input soundwave is corrupt"
-        elsif check_high_range(high_range) == false
-            "input soundwave is corrupt"
-        elsif check_frequency(frequency) == false
-            return "input soundwave is corrupt"
         else
           get_new_frequency(frequency, low_range, high_range)
         end
